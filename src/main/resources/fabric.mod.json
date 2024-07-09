@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "linkstorage",
+  "version": "${version}",
+  "name": "Link storage",
+  "description": "This is mod is a simple link storage mod!",
+  "authors": [
+    "ArrayJack"
+  ],
+  "contact": {
+    "sources": "https://github.com/Fabricators-of-Create/create-fabric-addon-template"
+  },
+  "license": "MIT License",
+  "icon": "assets/linkstorage/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.jacktorresr.linkstorage.LinkStorage"
+    ],
+    "client": [
+      "com.jacktorresr.linkstorage.LinkStorageClient"
+    ]
+  },
+  "mixins": [
+    "linkstorage.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${fabric_loader_version}",
+    "fabric-api": ">=${fabric_api_version}",
+    "create": "${create_version}",
+    "minecraft": "${minecraft_version}"
+  }
+}
